@@ -7,7 +7,7 @@ return {
     {
       "rafamadriz/friendly-snippets",
       config = function()
-        require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets" })
+        require("luasnip.loaders.from_vscode").lazy_load()
       end,
     },
     {
@@ -26,7 +26,7 @@ return {
     },
   },
   opts = {
-    history = true,
+    history = false,
     delete_check_events = "TextChanged",
   },
 }
